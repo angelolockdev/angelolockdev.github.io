@@ -1,18 +1,963 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Angelo Lock To Hang — Architecte Logiciel Senior, expert Laravel (Clean Architecture, DDD, TDD), microservices Rust et systèmes RAG sécurisés." />
-    <title>Angelo Lock To Hang — Architecte Logiciel & Ingénieur IA | Spécialiste Laravel</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="./assets/index-7S8Q5lnF.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-B4KpV2oG.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="metaTitle">Angelo Lock To Hang — Développeur Fullstack PHP/Laravel &amp; Ingénieur IA</title>
+<meta name="description" id="metaDesc" content="Développeur fullstack PHP/Laravel/Symfony depuis 6+ ans, 50+ projets livrés. Je construis des API, des plateformes multi-tenant et des intégrations RAG sécurisées côté serveur. Antananarivo, disponible en remote.">
+<meta name="author" content="Angelo Lock To Hang">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0B1620">
+<link rel="canonical" href="https://angelolockdev.github.io/">
+<link rel="alternate" hreflang="fr" href="https://angelolockdev.github.io/">
+<link rel="alternate" hreflang="en" href="https://angelolockdev.github.io/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://angelolockdev.github.io/">
+
+<!-- Open Graph / sharing -->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Angelo Lock To Hang">
+<meta property="og:title" content="Angelo Lock To Hang — Fullstack PHP/Laravel &amp; AI Engineer">
+<meta property="og:description" content="Solid Laravel engineering, with AI and RAG built for production. 6+ years, 50+ projects delivered.">
+<meta property="og:url" content="https://angelolockdev.github.io/">
+<meta property="og:image" content="https://angelolockdev.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Angelo Lock To Hang — Fullstack PHP/Laravel & AI Engineer">
+<meta property="og:locale" id="ogLocale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3A4D'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%238CC4E8'%3EAL%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Angelo Lock To Hang",
+  "jobTitle": "Développeur Fullstack PHP/Laravel & Ingénieur IA",
+  "url": "https://angelolockdev.github.io/",
+  "sameAs": ["https://github.com/angelolockdev", "https://www.linkedin.com/in/angelo-lock-to-hang"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Antananarivo", "addressCountry": "MG" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "IT University" },
+  "knowsLanguage": ["fr", "en", "mg"],
+  "knowsAbout": ["PHP", "Laravel", "Symfony", "REST API", "PostgreSQL", "MySQL", "Redis", "RAG", "Vector search", "AI agents", "Docker", "CI/CD", "Clean Architecture", "Application security"]
+}
+</script>
+
+<!-- Apply saved theme before first paint (no flash) -->
+<script>
+try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ff-display:"Newsreader",Georgia,"Times New Roman",serif;
+  --ff-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ff-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+  --fs-xs:.8125rem;  --fs-sm:.9375rem; --fs-base:1.0625rem; --fs-md:1.25rem;
+  --fs-lg:clamp(1.5rem,1.25rem + 1vw,1.875rem);
+  --fs-xl:clamp(2rem,1.5rem + 2.2vw,3rem);
+  --fs-2xl:clamp(2.75rem,1.9rem + 4.2vw,5.25rem);
+
+  --s-1:.25rem; --s-2:.5rem; --s-3:.75rem; --s-4:1rem; --s-5:1.5rem;
+  --s-6:2rem; --s-7:3rem; --s-8:4rem; --s-9:6rem;
+
+  --r-sm:4px; --r-md:8px; --r-lg:14px; --r-pill:999px;
+  --maxw:72rem;
+  --ease:cubic-bezier(.2,.7,.2,1);
+
+  /* dark (default) */
+  --bg:#0B1620; --bg-elev:#0F1E2A; --surface:#132634; --surface-2:#18303F;
+  --line:#22394A; --line-strong:#33546A;
+  --text:#E7EEF3; --text-2:#B4C5D1; --muted:#8FA6B6;
+  --accent:#8CC4E8; --accent-ink:#0B1620; --accent-soft:rgba(140,196,232,.12);
+  --brand:#1F3A4D; --ok:#7FD1A8; --ph:#E8C27A;
+  --shadow:0 1px 0 rgba(255,255,255,.03) inset,0 10px 30px -12px rgba(0,0,0,.6);
+  --grid:rgba(140,196,232,.055);
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme]){
+    --bg:#F5F7F9; --bg-elev:#FFFFFF; --surface:#FFFFFF; --surface-2:#EEF3F7;
+    --line:#D8E1E8; --line-strong:#B3C3CF;
+    --text:#10222E; --text-2:#33495A; --muted:#506878;
+    --accent:#1F5A80; --accent-ink:#FFFFFF; --accent-soft:rgba(31,90,128,.08);
+    --brand:#1F3A4D; --ok:#1E7A50; --ph:#8A5A00;
+    --shadow:0 1px 2px rgba(16,34,46,.06),0 12px 28px -14px rgba(16,34,46,.18);
+    --grid:rgba(31,58,77,.06);
+  }
+}
+:root[data-theme="light"]{
+  --bg:#F5F7F9; --bg-elev:#FFFFFF; --surface:#FFFFFF; --surface-2:#EEF3F7;
+  --line:#D8E1E8; --line-strong:#B3C3CF;
+  --text:#10222E; --text-2:#33495A; --muted:#506878;
+  --accent:#1F5A80; --accent-ink:#FFFFFF; --accent-soft:rgba(31,90,128,.08);
+  --brand:#1F3A4D; --ok:#1E7A50; --ph:#8A5A00;
+  --shadow:0 1px 2px rgba(16,34,46,.06),0 12px 28px -14px rgba(16,34,46,.18);
+  --grid:rgba(31,58,77,.06);
+}
+
+/* ============ BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:7.5rem;-webkit-text-size-adjust:100%}
+@media (min-width:60rem){html{scroll-padding-top:5.5rem}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 var(--fs-base)/1.6 var(--ff-body);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+a{color:var(--accent);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+h1,h2,h3{font-family:var(--ff-display);font-weight:600;line-height:1.1;letter-spacing:-.015em;margin:0;text-wrap:balance}
+p{margin:0 0 var(--s-4);text-wrap:pretty}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:var(--r-sm)}
+::selection{background:var(--accent);color:var(--accent-ink)}
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap{width:min(100% - 2.5rem,var(--maxw));margin-inline:auto}
+.mono{font-family:var(--ff-mono)}
+
+.skip{position:absolute;left:var(--s-4);top:-4rem;z-index:100;padding:var(--s-3) var(--s-4);background:var(--accent);color:var(--accent-ink);
+  border-radius:var(--r-md);font-weight:600;text-decoration:none;transition:top .15s}
+.skip:focus{top:var(--s-4)}
+
+/* placeholder marker: easy to spot, easy to grep */
+.ph{display:inline-block;font:500 .75rem/1.4 var(--ff-mono);color:var(--ph);border:1px dashed currentColor;border-radius:var(--r-sm);padding:0 .35em;vertical-align:.1em;white-space:nowrap}
+
+/* ============ HEADER / NAV ============ */
+.site-head{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);
+  backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.head-row{display:flex;align-items:center;gap:var(--s-3);min-height:3.75rem;padding-top:max(var(--s-2),env(safe-area-inset-top))}
+.brand{display:flex;align-items:center;gap:var(--s-3);color:var(--text);text-decoration:none;flex:1 1 0;min-width:0;min-height:2.75rem}
+@media (min-width:60rem){.brand{flex:0 1 auto;margin-right:auto}}
+.brand-mark{flex:none;display:grid;place-items:center;width:2rem;height:2rem;border-radius:var(--r-md);background:var(--brand);
+  color:#8CC4E8;font:600 .95rem/1 var(--ff-display);letter-spacing:.02em}
+.brand-name{font:600 var(--fs-sm)/1.2 var(--ff-body);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:26rem){.brand-name{font-size:var(--fs-xs)}.brand{gap:var(--s-2)}.head-row{gap:var(--s-2)}.toggles{gap:.375rem}}
+@media (max-width:22.5rem){.brand-name{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+.nav{order:3;flex-basis:calc(100% + 2.5rem);overflow-x:auto;scrollbar-width:none;margin-inline:-1.25rem;padding:0 1.25rem var(--s-1);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 1.25rem,#000 calc(100% - 2.5rem),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 1.25rem,#000 calc(100% - 2.5rem),transparent)}
+.nav ul{padding-right:2rem}
+.nav::-webkit-scrollbar{display:none}
+.nav ul{display:flex;gap:var(--s-1);width:max-content}
+.nav a{display:flex;align-items:center;min-height:2.75rem;padding:0 .75rem;border-radius:var(--r-md);color:var(--text-2);text-decoration:none;
+  font:500 var(--fs-xs)/1.2 var(--ff-mono);letter-spacing:.02em;transition:color .15s,background-color .15s}
+.nav a:hover{color:var(--text);background:var(--accent-soft)}
+.nav a[aria-current="true"]{color:var(--text);background:var(--accent-soft);box-shadow:inset 0 -2px 0 var(--accent)}
+.head-row{flex-wrap:wrap}
+.toggles{display:flex;align-items:center;gap:var(--s-2)}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:var(--r-pill);padding:2px}
+.seg button,.icon-btn{font:500 var(--fs-xs)/1 var(--ff-mono);color:var(--text-2);background:none;border:0;cursor:pointer}
+.seg button{min-width:2.75rem;min-height:2.5rem;border-radius:var(--r-pill);padding:0 .6rem}
+.seg button[aria-pressed="true"]{background:var(--text);color:var(--bg)}
+.icon-btn{display:grid;place-items:center;width:2.75rem;height:2.75rem;border:1px solid var(--line-strong);border-radius:var(--r-pill)}
+.icon-btn:hover,.seg button:hover:not([aria-pressed="true"]){color:var(--text)}
+.icon-btn svg{width:1.1rem;height:1.1rem}
+.icon-sun{display:none}
+[data-ui-theme="light"] .icon-sun{display:block}
+[data-ui-theme="light"] .icon-moon{display:none}
+
+@media (min-width:60rem){
+  .head-row{flex-wrap:nowrap;padding-top:0}
+  .nav{order:0;flex-basis:auto;margin:0;padding:0;overflow:visible;-webkit-mask-image:none;mask-image:none}
+  .nav ul{padding-right:0}
+}
+
+/* ============ SECTIONS ============ */
+section{padding-block:var(--s-8)}
+@media (min-width:48rem){section{padding-block:var(--s-9)}}
+.sec-head{display:grid;gap:var(--s-3);margin-bottom:var(--s-7);max-width:44rem}
+.eyebrow{font:500 var(--fs-xs)/1 var(--ff-mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase;display:flex;gap:.6em;align-items:center}
+.eyebrow::before{content:"";width:1.5rem;height:1px;background:var(--line-strong)}
+.sec-head h2{font-size:var(--fs-xl)}
+.sec-head p{color:var(--text-2);margin:0}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding-block:var(--s-8) var(--s-7);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 70% at 30% 20%,#000 40%,transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 20%,#000 40%,transparent 100%)}
+.hero-grid{display:grid;gap:var(--s-7);align-items:center}
+@media (min-width:60rem){.hero{padding-block:var(--s-9) var(--s-8)}.hero-grid{grid-template-columns:1.15fr .85fr}}
+.chip{display:inline-flex;align-items:center;gap:.55rem;padding:.4rem .8rem;border:1px solid var(--line-strong);border-radius:var(--r-pill);
+  font:500 var(--fs-xs)/1.2 var(--ff-mono);color:var(--text-2);background:var(--bg-elev)}
+.dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:var(--fs-2xl);margin-top:var(--s-5);letter-spacing:-.025em}
+.role{font:500 var(--fs-sm)/1.4 var(--ff-mono);color:var(--accent);margin:var(--s-4) 0 0}
+.value{font:500 var(--fs-lg)/1.3 var(--ff-display);color:var(--text);margin:var(--s-5) 0 var(--s-4);max-width:32ch}
+.lede{color:var(--text-2);max-width:56ch}
+.ctas{display:flex;flex-wrap:wrap;gap:var(--s-3);margin-top:var(--s-6);align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.5rem;min-height:2.875rem;padding:0 1.15rem;border-radius:var(--r-md);
+  font:600 var(--fs-sm)/1 var(--ff-body);text-decoration:none;border:1px solid transparent;cursor:pointer;
+  transition:transform .15s var(--ease),background-color .15s,border-color .15s,color .15s}
+.btn svg{width:1rem;height:1rem;flex:none}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn-ghost{border-color:var(--line-strong);color:var(--text);background:var(--bg-elev)}
+.btn-ghost:hover{border-color:var(--accent)}
+.btn-link{color:var(--text-2);padding-inline:.4rem;text-decoration:underline;text-decoration-color:var(--line-strong)}
+.btn-link:hover{color:var(--text)}
+@media (max-width:36rem){
+  .ctas{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-3)}
+  .ctas .btn{justify-content:center;padding-inline:.75rem}
+  .ctas .btn-link{grid-column:1/-1;justify-self:start}
+  .hero{padding-block:var(--s-6) var(--s-7)}
+  .hero h1{margin-top:var(--s-4)}
+  .value{margin-top:var(--s-4)}
+}
+@media (max-width:22.5rem){.ctas{grid-template-columns:1fr}}
+
+/* request-trace panel: the "signature" element */
+.trace{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);overflow:hidden;font-family:var(--ff-mono);font-size:var(--fs-xs)}
+.trace-bar{display:flex;justify-content:space-between;gap:var(--s-3);padding:.7rem 1rem;border-bottom:1px solid var(--line);color:var(--muted);background:var(--bg-elev)}
+.trace-bar b{color:var(--text);font-weight:500}
+.trace ol{margin:0;padding:.5rem 0;list-style:none;counter-reset:step}
+.trace li{display:grid;grid-template-columns:1.6rem 5.2rem 1fr auto;gap:.5rem;align-items:baseline;padding:.5rem 1rem;color:var(--text-2);
+  animation:rise .5s var(--ease) both}
+.trace li:nth-child(2){animation-delay:.08s}.trace li:nth-child(3){animation-delay:.16s}
+.trace li:nth-child(4){animation-delay:.24s}.trace li:nth-child(5){animation-delay:.32s}
+.trace li::before{counter-increment:step;content:counter(step,decimal-leading-zero);color:var(--muted)}
+.trace .k{color:var(--accent)}
+.trace .st{color:var(--ok)}
+.trace .st.wait{color:var(--ph)}
+.trace figcaption{padding:.75rem 1rem;border-top:1px solid var(--line);color:var(--muted);font-size:var(--fs-xs);line-height:1.5}
+@media (max-width:26rem){.trace li{grid-template-columns:1.4rem 1fr auto}.trace li .k{grid-column:2}.trace li .d{grid-column:2/4;grid-row:2}}
+
+/* ============ CREDIBILITY STRIP ============ */
+.stats{border-block:1px solid var(--line);background:var(--bg-elev)}
+.stats ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.stats li{padding:var(--s-5) var(--s-4);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats li:nth-child(odd){padding-left:0}
+.stats li:nth-child(2n){border-right:0}
+.stats li:nth-last-child(-n+2){border-bottom:0}
+@media (min-width:48rem){.stats ul{grid-template-columns:repeat(4,minmax(0,1fr))}.stats li{border-bottom:0;border-right:1px solid var(--line)!important;padding-left:var(--s-5)}.stats li:first-child{padding-left:0}.stats li:last-child{border-right:0!important}}
+.stat-n{display:block;font:600 var(--fs-xl)/1 var(--ff-display);color:var(--text)}
+.stat-l{display:block;margin-top:var(--s-2);font-size:var(--fs-sm);color:var(--text-2);line-height:1.4}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;gap:var(--s-6)}
+@media (min-width:56rem){.about-grid{grid-template-columns:1fr 18rem;gap:var(--s-8)}}
+.about-text p{font-size:var(--fs-md);line-height:1.6;color:var(--text-2)}
+.about-text p strong{color:var(--text);font-weight:600}
+.aside-card{border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--s-5);background:var(--bg-elev);align-self:start}
+.aside-card h3{font:500 var(--fs-xs)/1 var(--ff-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:var(--s-4)}
+.aside-card dl{margin:0;display:grid;gap:var(--s-3)}
+.aside-card dt{font:500 .75rem/1 var(--ff-mono);color:var(--muted)}
+.aside-card dd{margin:.25rem 0 0;color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:var(--s-2)}
+.tag{font:400 var(--fs-xs)/1 var(--ff-mono);padding:.4rem .6rem;border:1px solid var(--line-strong);border-radius:var(--r-sm);color:var(--text-2);background:var(--bg)}
+
+/* ============ SKILLS ============ */
+.legend{display:flex;flex-wrap:wrap;gap:var(--s-5);margin:calc(var(--s-6) * -1) 0 var(--s-6);font:400 var(--fs-xs)/1.2 var(--ff-mono);color:var(--muted)}
+.legend span{display:inline-flex;gap:.5rem;align-items:center}
+.skills{display:grid;gap:var(--s-4);grid-template-columns:repeat(auto-fill,minmax(min(100%,19rem),1fr))}
+.skill-card{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);padding:var(--s-5)}
+.skill-card h3{font:600 var(--fs-md)/1.2 var(--ff-display);display:flex;justify-content:space-between;gap:var(--s-3);align-items:baseline}
+.skill-card h3 .mono{font-size:.75rem;color:var(--muted);font-weight:400}
+.skill-card ul{margin-top:var(--s-4);display:grid}
+.skill-card li{display:flex;justify-content:space-between;align-items:center;gap:var(--s-3);padding:.55rem 0;border-top:1px dashed var(--line)}
+.skill-card li:first-child{border-top:0}
+.skn{font:400 var(--fs-sm)/1.3 var(--ff-mono);color:var(--text);min-width:0}
+.lvl{display:inline-flex;gap:3px;align-items:flex-end;flex:none}
+.lvl i{display:block;width:6px;border-radius:1px;background:var(--line-strong)}
+.lvl i:nth-child(1){height:7px}.lvl i:nth-child(2){height:11px}.lvl i:nth-child(3){height:15px}
+.l1 i:nth-child(1),.l2 i:nth-child(-n+2),.l3 i{background:var(--accent)}
+.methods{margin-top:var(--s-5);color:var(--text-2);font-size:var(--fs-sm)}
+.methods b{font:500 var(--fs-xs)/1 var(--ff-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-right:.5rem}
+
+/* ============ PROJECTS ============ */
+.projects{display:grid;gap:var(--s-5);grid-template-columns:repeat(auto-fill,minmax(min(100%,22rem),1fr))}
+@media (min-width:60rem){.projects .feature{grid-column:span 2;display:grid;grid-template-columns:1.05fr 1fr}.projects .feature .shot{aspect-ratio:auto;min-height:100%;border-bottom:0;border-right:1px solid var(--line)}}
+.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);overflow:hidden;
+  transition:border-color .2s,transform .2s var(--ease)}
+.card:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.shot{position:relative;aspect-ratio:16/10;border-bottom:1px solid var(--line);display:flex;align-items:flex-end;padding:var(--s-4);
+  font:400 .75rem/1.4 var(--ff-mono);color:rgba(231,238,243,.85);overflow:hidden}
+.shot::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:24px 24px}
+.shot span{position:relative;z-index:1;background:rgba(11,22,32,.6);padding:.25rem .5rem;border-radius:var(--r-sm)}
+.shot-ak{background:linear-gradient(135deg,#1F3A4D 0%,#2B5672 55%,#5E93B5 100%)}
+.shot-fum{background:linear-gradient(135deg,#000D22 0%,#0F2747 60%,#7A590C 140%)}
+.shot-fd{background:linear-gradient(135deg,#17262F 0%,#24414F 50%,#3C6A6A 100%)}
+.shot-ai{background:linear-gradient(135deg,#101B24 0%,#1E2F3D 50%,#36506A 100%)}
+.card-body{display:flex;flex-direction:column;gap:var(--s-4);padding:var(--s-5);flex:1}
+.meta .live{display:inline-flex;align-items:center;gap:.4rem;color:var(--ok)}
+.meta .live::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:currentColor}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem .9rem;font:400 var(--fs-xs)/1.3 var(--ff-mono);color:var(--muted)}
+.card h3{font-size:var(--fs-lg)}
+.facts{margin:0;display:grid;gap:var(--s-3)}
+.facts div{display:grid;gap:.15rem}
+.facts dt{font:500 .75rem/1.2 var(--ff-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.facts dd{margin:0;color:var(--text-2);font-size:var(--fs-sm);line-height:1.55}
+.badges{display:flex;flex-wrap:wrap;gap:.4rem}
+.badge{font:400 .75rem/1 var(--ff-mono);padding:.35rem .5rem;border-radius:var(--r-sm);background:var(--accent-soft);color:var(--text);border:1px solid var(--line)}
+.links{display:flex;flex-wrap:wrap;gap:var(--s-2) var(--s-4);margin-top:auto;padding-top:var(--s-2);font:500 var(--fs-xs)/1.2 var(--ff-mono)}
+.links a{display:inline-flex;align-items:center;gap:.35rem;min-height:2.25rem}
+.links .off{display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);min-height:2.25rem}
+
+/* ============ TIMELINE ============ */
+.timeline{position:relative;display:grid;gap:var(--s-6)}
+.timeline::before{content:"";position:absolute;left:.3rem;top:.5rem;bottom:.5rem;width:1px;background:var(--line-strong)}
+.tl-item{position:relative;display:grid;gap:var(--s-2);padding-left:var(--s-6)}
+.tl-item::before{content:"";position:absolute;left:0;top:.45rem;width:.65rem;height:.65rem;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+@media (min-width:48rem){
+  .timeline::before{left:12.3rem}
+  .tl-item{grid-template-columns:11rem 1fr;gap:var(--s-7);padding-left:0}
+  .tl-item::before{left:12rem}
+}
+.tl-when{font:500 var(--fs-xs)/1.5 var(--ff-mono);color:var(--muted);padding-top:.2rem}
+.tl-body h3{font-size:var(--fs-md);font-family:var(--ff-body);font-weight:600;letter-spacing:0}
+.tl-org{color:var(--accent);font:400 var(--fs-sm)/1.4 var(--ff-mono);margin:.3rem 0 var(--s-3)}
+.tl-body ul{display:grid;gap:var(--s-2)}
+.tl-body li{position:relative;padding-left:1.1rem;color:var(--text-2)}
+.tl-body li::before{content:"→";position:absolute;left:0;color:var(--muted);font-family:var(--ff-mono);font-size:.85em;top:.1em}
+
+/* ============ EDUCATION ============ */
+.edu{display:grid;gap:var(--s-4);grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr))}
+.edu-card{border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--s-5);background:var(--bg-elev)}
+.edu-card h3{font:500 var(--fs-xs)/1 var(--ff-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:var(--s-4)}
+.edu-card .t{font:600 var(--fs-md)/1.25 var(--ff-display);color:var(--text);margin:0}
+.edu-card .s{color:var(--text-2);font-size:var(--fs-sm);margin:.35rem 0 0}
+.edu-card + .edu-card .t + .s + .t{margin-top:var(--s-4)}
+.lang-list{display:grid;gap:var(--s-3)}
+.lang-list li{display:flex;justify-content:space-between;gap:var(--s-3);border-bottom:1px dashed var(--line);padding-bottom:var(--s-2)}
+.lang-list li:last-child{border-bottom:0}
+.lang-list .mono{color:var(--accent);font-size:var(--fs-xs)}
+
+/* ============ CONTACT / FOOTER ============ */
+.contact{background:var(--bg-elev);border-top:1px solid var(--line);padding-block:var(--s-8) var(--s-6)}
+.contact-grid{display:grid;gap:var(--s-7)}
+@media (min-width:56rem){.contact-grid{grid-template-columns:1.2fr 1fr;align-items:start}}
+.contact h2{font-size:var(--fs-xl);max-width:20ch}
+.contact .how{margin-top:var(--s-5);color:var(--text-2);max-width:48ch}
+.contact .how b{color:var(--text);font-weight:600}
+.channels{display:grid;gap:var(--s-3)}
+.channel{display:flex;align-items:center;justify-content:space-between;gap:var(--s-3);padding:var(--s-4);border:1px solid var(--line);border-radius:var(--r-md);background:var(--surface);min-width:0}
+.channel .lbl{font:500 .75rem/1 var(--ff-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.35rem}
+.channel a{display:inline-block;padding-block:.35rem;font:500 var(--fs-sm)/1.3 var(--ff-mono);overflow-wrap:anywhere}
+.channel > div{min-width:0}
+.copy{flex:none;font:500 var(--fs-xs)/1 var(--ff-mono);min-height:2.5rem;padding:0 .85rem;border-radius:var(--r-md);border:1px solid var(--line-strong);background:var(--bg);color:var(--text);cursor:pointer}
+.copy:hover{border-color:var(--accent)}
+.copy[data-state="done"]{border-color:var(--ok);color:var(--ok)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s-3);margin-top:var(--s-8);padding-top:var(--s-5);border-top:1px solid var(--line);font:400 var(--fs-xs)/1.5 var(--ff-mono);color:var(--muted)}
+.foot a{color:var(--text-2)}
+
+/* ============ MOTION ============ */
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero-copy > *{animation:rise .6s var(--ease) both}
+.hero-copy > :nth-child(2){animation-delay:.05s}.hero-copy > :nth-child(3){animation-delay:.1s}
+.hero-copy > :nth-child(4){animation-delay:.15s}.hero-copy > :nth-child(5){animation-delay:.2s}.hero-copy > :nth-child(6){animation-delay:.25s}
+@supports (animation-timeline:view()){
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+
+@media print{
+  .site-head,.toggles,.copy,.skip{display:none!important}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main" data-i18n="skip">Aller au contenu</a>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="Angelo Lock To Hang — accueil" data-i18n-aria="brandAria">
+      <span class="brand-mark" aria-hidden="true">AL</span>
+      <span class="brand-name">Angelo Lock To Hang</span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale" data-i18n-aria="navAria">
+      <ul>
+        <li><a href="#about" data-i18n="nAbout">À propos</a></li>
+        <li><a href="#skills" data-i18n="nSkills">Compétences</a></li>
+        <li><a href="#projects" data-i18n="nProjects">Projets</a></li>
+        <li><a href="#experience" data-i18n="nExp">Parcours</a></li>
+        <li><a href="#education" data-i18n="nEdu">Formation</a></li>
+        <li><a href="#contact" data-i18n="nContact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="toggles">
+      <div class="seg" role="group" aria-label="Langue" data-i18n-aria="langAria">
+        <button type="button" data-set-lang="fr" aria-pressed="true" lang="fr">FR</button>
+        <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+      <button type="button" class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="Thème clair" data-i18n-aria="themeAria">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="chip"><span class="dot" aria-hidden="true"></span><span data-i18n="status">Disponible · freelance &amp; remote</span></p>
+      <h1 id="hero-title">Angelo Lock To Hang</h1>
+      <p class="role" data-i18n="role">Développeur Fullstack PHP/Laravel &amp; Ingénieur IA</p>
+      <p class="value" data-i18n="value">Des applications Laravel solides, et une IA conçue pour la production.</p>
+      <p class="lede" data-i18n="lede">Je conçois des API, des plateformes multi‑tenant et des intégrations RAG côté serveur&nbsp;: testées, sécurisées et déployées sans mauvaise surprise.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#projects">
+          <span data-i18n="ctaProjects">Voir les projets</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+                <a class="btn btn-ghost" id="cvLink" href="./cv/CV_Angelo_FR.pdf" data-cv-fr="./cv/CV_Angelo_FR.pdf" data-cv-en="./cv/CV_Angelo_EN.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          <span data-i18n="ctaCv">Télécharger le CV</span>
+        </a>
+        <a class="btn btn-link" href="#contact" data-i18n="ctaContact">Me contacter</a>
+      </div>
+    </div>
+
+    <figure class="trace" aria-labelledby="trace-cap">
+      <div class="trace-bar" aria-hidden="true"><b>POST /api/tutor/ask</b><span>akademia</span></div>
+      <ol>
+        <li><span class="k">auth</span><span class="d" data-i18n="tr1">utilisateur + tenant isolés</span><span class="st">✓</span></li>
+        <li><span class="k">retrieve</span><span class="d" data-i18n="tr2">recherche vectorielle</span><span class="st">✓</span></li>
+        <li><span class="k">generate</span><span class="d" data-i18n="tr3">appel LLM côté serveur</span><span class="st">✓</span></li>
+        <li><span class="k">trace</span><span class="d" data-i18n="tr4">sources et réponse journalisées</span><span class="st">✓</span></li>
+        <li><span class="k">review</span><span class="d" data-i18n="tr5">validation humaine si nécessaire</span><span class="st wait">…</span></li>
+      </ol>
+      <figcaption id="trace-cap" data-i18n="trCap">Schéma illustratif&nbsp;: le parcours d'une question posée au tuteur RAG d'Akademia. Aucune clé ni aucun appel modèle ne passe par le client.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= CREDIBILITY STRIP ================= -->
+<section class="stats" aria-labelledby="stats-title" style="padding-block:0">
+  <h2 id="stats-title" class="vh" data-i18n="statsTitle">En chiffres</h2>
+  <ul class="wrap">
+    <li><span class="stat-n">6+</span><span class="stat-l" data-i18n="st1">ans d'expérience en PHP, Laravel et Symfony</span></li>
+    <li><span class="stat-n">50+</span><span class="stat-l" data-i18n="st2">projets livrés&nbsp;: web, e-commerce, API</span></li>
+    <li><span class="stat-n">1</span><span class="stat-l" data-i18n="st3">plateforme RAG multi-tenant en construction depuis 01/2026</span></li>
+    <li><span class="stat-n">3</span><span class="stat-l" data-i18n="st4">langues de travail&nbsp;: français, anglais, malagasy</span></li>
+  </ul>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow"><span>§01</span><span data-i18n="nAbout">À propos</span></p>
+      <h2 id="about-title" data-i18n="aboutTitle">De l'ingénierie rigoureuse, pas une liste de buzzwords.</h2>
+    </header>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p data-i18n="about1">Je développe en PHP depuis plus de six ans, surtout avec <strong>Laravel et Symfony</strong>. Chez Fulldigits, j'ai livré plus de 50 projets&nbsp;: sites, boutiques en ligne, API et services métier. J'en retiens une règle simple&nbsp;: le code qui dure est celui qu'on peut tester, relire et déployer sans stress.</p>
+        <p data-i18n="about2">Depuis 2024, j'applique cette discipline à l'IA. Sur <strong>Akademia</strong>, que je construis depuis janvier 2026, la recherche vectorielle et les appels au modèle restent côté serveur, chaque réponse est tracée et un humain valide ce qui doit l'être. Je travaille depuis Antananarivo, en français ou en anglais, avec des équipes sur place ou à distance.</p>
+      </div>
+      <aside class="aside-card reveal" aria-labelledby="facts-title">
+        <h3 id="facts-title" data-i18n="factsTitle">En bref</h3>
+        <dl>
+          <div><dt data-i18n="fLoc">Basé à</dt><dd data-i18n="fLocV">Antananarivo, Madagascar</dd></div>
+          <div><dt data-i18n="fMode">Mode</dt><dd data-i18n="fModeV">Freelance · remote · missions longues</dd></div>
+          <div><dt data-i18n="fInt">En dehors du code</dt>
+            <dd><ul class="tags" style="margin-top:.4rem">
+              <li class="tag" data-i18n="i1">Veille IA générative</li>
+              <li class="tag" data-i18n="i2">Trading algorithmique</li>
+              <li class="tag" data-i18n="i3">Football</li>
+              <li class="tag" data-i18n="i4">Jeux vidéo</li>
+            </ul></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow"><span>§02</span><span data-i18n="nSkills">Compétences</span></p>
+      <h2 id="skills-title" data-i18n="skillsTitle">Ce que j'utilise, et à quelle fréquence.</h2>
+      <p data-i18n="skillsLede">Un niveau honnête plutôt qu'un pourcentage&nbsp;: ce que j'utilise chaque semaine, ce que je maîtrise, ce que je sais mobiliser quand le projet le demande.</p>
+    </header>
+    <p class="legend" aria-hidden="true">
+      <span><span class="lvl l3"><i></i><i></i><i></i></span><span data-i18n="lv3">Usage quotidien</span></span>
+      <span><span class="lvl l2"><i></i><i></i><i></i></span><span data-i18n="lv2">Maîtrisé</span></span>
+      <span><span class="lvl l1"><i></i><i></i><i></i></span><span data-i18n="lv1">Opérationnel</span></span>
+    </p>
+
+    <div class="skills">
+      <article class="skill-card reveal">
+        <h3><span>PHP &amp; back-end</span><span class="mono">01</span></h3>
+        <ul>
+          <li><span class="skn">PHP 8</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">Laravel</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">Symfony</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">REST API</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">WordPress</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <h3><span data-i18n="cData">Données</span><span class="mono">02</span></h3>
+        <ul>
+          <li><span class="skn">PostgreSQL</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">MySQL</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">PL/SQL</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">Redis</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">Supabase</span><span class="lvl l1"><i></i><i></i><i></i><span class="vh" data-i18n="lv1">Opérationnel</span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <h3><span data-i18n="cAi">IA appliquée</span><span class="mono">03</span></h3>
+        <ul>
+          <li><span class="skn">RAG</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn" data-i18n="kVector">Recherche vectorielle</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn" data-i18n="kAgents">Agents IA</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn" data-i18n="kLlm">Intégration LLM</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <h3><span data-i18n="cQuality">Qualité &amp; architecture</span><span class="mono">04</span></h3>
+        <ul>
+          <li><span class="skn" data-i18n="kTests">Tests unitaires &amp; fonctionnels</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">Clean Architecture</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn" data-i18n="kSec">Sécurité applicative</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <h3><span data-i18n="cDevops">DevOps &amp; livraison</span><span class="mono">05</span></h3>
+        <ul>
+          <li><span class="skn">Docker</span><span class="lvl l3"><i></i><i></i><i></i><span class="vh" data-i18n="lv3">Usage quotidien</span></span></li>
+          <li><span class="skn">GitHub Actions</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">Bitbucket Pipelines</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">CI/CD</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">Linux</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <h3><span data-i18n="cExtra">Complémentaires</span><span class="mono">06</span></h3>
+        <ul>
+          <li><span class="skn">Python</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">TypeScript</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">Flutter</span><span class="lvl l2"><i></i><i></i><i></i><span class="vh" data-i18n="lv2">Maîtrisé</span></span></li>
+          <li><span class="skn">Node.js</span><span class="lvl l1"><i></i><i></i><i></i><span class="vh" data-i18n="lv1">Opérationnel</span></span></li>
+          <li><span class="skn">Java Spring Boot</span><span class="lvl l1"><i></i><i></i><i></i><span class="vh" data-i18n="lv1">Opérationnel</span></span></li>
+        </ul>
+      </article>
+    </div>
+    <p class="methods reveal"><b data-i18n="mLabel">Méthodes</b><span data-i18n="mText">Agile/Scrum, revues de code, travail en équipe avec produit et design.</span></p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" aria-labelledby="projects-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow"><span>§03</span><span data-i18n="nProjects">Projets</span></p>
+      <h2 id="projects-title" data-i18n="projTitle">Des projets qui montrent le raisonnement.</h2>
+      <p data-i18n="projLede">Pour chacun&nbsp;: le problème, mon rôle, la stack et ce qui a changé une fois livré.</p>
+    </header>
+
+    <div class="projects">
+      <!-- 1. Akademia -->
+      <article class="card feature reveal" aria-labelledby="p1">
+        <div class="shot shot-ak" role="img" aria-label="Aperçu d'Akademia (capture à venir)" data-i18n-aria="shotAk"><span>akademia-cover.webp · 16:10</span></div>
+        <div class="card-body">
+          <p class="meta"><span class="live" data-i18n="pAkWhen">01/2026 — en cours</span><span data-i18n="pAkTag">Produit · IA &amp; éducation</span></p>
+          <h3 id="p1">Akademia</h3>
+          <dl class="facts">
+            <div><dt data-i18n="lProblem">Problème</dt><dd data-i18n="pAkProb">Les écoles et les élèves préparant le BEPC, le BACC ou un concours jonglent entre des supports dispersés, sans aide personnalisée fiable.</dd></div>
+            <div><dt data-i18n="lRole">Mon rôle</dt><dd data-i18n="pAkRole">Architecture et développement&nbsp;: API, authentification et pipeline RAG en Laravel, client mobile en Flutter.</dd></div>
+            <div><dt data-i18n="lStatus">Statut</dt><dd data-i18n="pAkRes">En développement actif depuis janvier 2026&nbsp;: une architecture unique pour les trois parcours, et un assistant pédagogique conçu pour que chaque réponse soit tracée et validée par un humain.</dd></div>
+          </dl>
+          <ul class="badges" aria-label="Technologies" data-i18n-aria="techAria">
+            <li class="badge">Laravel</li><li class="badge">Flutter</li><li class="badge">PostgreSQL</li><li class="badge">RAG</li><li class="badge">Multi-tenant</li>
+          </ul>
+          <p class="links">
+            <span class="off" data-i18n="lPrivate">Code et démo sur demande</span>
+            <a href="#case-llm" data-i18n="lCase">Étude de cas ↓</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 2. FUM -->
+      <article class="card reveal" aria-labelledby="p2">
+        <div class="shot shot-fum" role="img" aria-label="Aperçu du site de la Foire Universitaire (capture à venir)" data-i18n-aria="shotFum"><span>fum-cover.webp · 16:10</span></div>
+        <div class="card-body">
+          <p class="meta"><span>07/2026</span><span data-i18n="pFumTag">Freelance · Prime Vision</span></p>
+          <h3 id="p2">Foire Universitaire de Madagascar</h3>
+          <dl class="facts">
+            <div><dt data-i18n="lProblem">Problème</dt><dd data-i18n="pFumProb">Les visiteurs devaient trouver un institut parmi de nombreux exposants, et les inscriptions comme les documents circulaient par des canaux séparés.</dd></div>
+            <div><dt data-i18n="lRole">Mon rôle</dt><dd data-i18n="pFumRole">Développeur freelance&nbsp;: recherche d'instituts, galerie filtrable, inscription des exposants et diffusion des documents.</dd></div>
+            <div><dt data-i18n="lResult">Résultat</dt><dd data-i18n="pFumRes">Un seul parcours d'inscription centralisé, et des documents distribués depuis le site plutôt qu'à la main.</dd></div>
+          </dl>
+          <ul class="badges" aria-label="Technologies" data-i18n-aria="techAria">
+            <li class="badge">Laravel</li><li class="badge">Filament</li><li class="badge">PostgreSQL</li><li class="badge">Docker</li>
+          </ul>
+          <p class="links">
+            <a href="https://foireuniversitaire.mg/" rel="noopener"><span data-i18n="lSite">Site en ligne</span> ↗</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 3. Fulldigits -->
+      <article class="card reveal" aria-labelledby="p3">
+        <div class="shot shot-fd" role="img" aria-label="Sélection de travaux (captures à venir)" data-i18n-aria="shotFd"><span>selected-work.webp · 16:10</span></div>
+        <div class="card-body">
+          <p class="meta"><span data-i18n="pFdWhen">2020 — aujourd'hui</span><span data-i18n="pFdTag">Sélection · Fulldigits SARL</span></p>
+          <h3 id="p3" data-i18n="pFdTitle">Web, e-commerce &amp; API</h3>
+          <dl class="facts">
+            <div><dt data-i18n="lProblem">Problème</dt><dd data-i18n="pFdProb">Des clients aux besoins très variés, des délais serrés, et des environnements qui divergeaient entre poste de dev, recette et production.</dd></div>
+            <div><dt data-i18n="lRole">Mon rôle</dt><dd data-i18n="pFdRole">Développeur back-end PHP / fullstack sur l'ensemble du cycle&nbsp;: conception, développement, tests, mise en production.</dd></div>
+            <div><dt data-i18n="lResult">Résultat</dt><dd data-i18n="pFdRes">Plus de 50 projets livrés, avec des environnements Docker reproductibles et des livraisons automatisées par Bitbucket Pipelines.</dd></div>
+          </dl>
+          <ul class="badges" aria-label="Technologies" data-i18n-aria="techAria">
+            <li class="badge">PHP</li><li class="badge">Laravel</li><li class="badge">Symfony</li><li class="badge">WordPress</li><li class="badge">Docker</li><li class="badge">Bitbucket Pipelines</li>
+          </ul>
+          <p class="links">
+            <span class="off" data-i18n="pFdNda">Projets clients sous confidentialité · détails sur demande</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- 4. AI engineering case study teaser -->
+      <article class="card reveal" id="case-llm" aria-labelledby="p4">
+        <div class="shot shot-ai" role="img" aria-label="Schéma d'architecture (à venir)" data-i18n-aria="shotAi"><span>llm-architecture.svg · 16:10</span></div>
+        <div class="card-body">
+          <p class="meta"><span data-i18n="pAiTag">Étude de cas · ingénierie IA</span></p>
+          <h3 id="p4" data-i18n="pAiTitle">Intégrer un LLM côté serveur sans perdre le contrôle</h3>
+          <dl class="facts">
+            <div><dt data-i18n="lProblem">Problème</dt><dd data-i18n="pAiProb">Brancher un modèle directement dans une app expose des clés, rend les réponses invérifiables et laisse passer les erreurs jusqu'aux utilisateurs.</dd></div>
+            <div><dt data-i18n="lApproach">Approche</dt><dd data-i18n="pAiAppr">Appels au modèle uniquement côté serveur, isolation par tenant, journalisation des sources et des réponses, file de validation humaine pour les cas sensibles.</dd></div>
+          </dl>
+          <ul class="badges" aria-label="Technologies" data-i18n-aria="techAria">
+            <li class="badge">Laravel</li><li class="badge">RAG</li><li class="badge">Audit log</li><li class="badge">Human-in-the-loop</li>
+          </ul>
+          <p class="links">
+            <span class="off" data-i18n="lSoon">Article en préparation</span>
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" aria-labelledby="exp-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow"><span>§04</span><span data-i18n="nExp">Parcours</span></p>
+      <h2 id="exp-title" data-i18n="expTitle">Un socle back-end, élargi vers le produit et l'IA.</h2>
+    </header>
+    <ol class="timeline">
+      <li class="tl-item reveal">
+        <p class="tl-when"><span data-i18n="e1When">2024 — aujourd'hui</span><br><span data-i18n="e1Where">Antananarivo / Remote</span></p>
+        <div class="tl-body">
+          <h3 data-i18n="e1Role">Ingénieur IA &amp; développeur produit</h3>
+          <p class="tl-org" data-i18n="e1Org">Projets indépendants</p>
+          <ul>
+            <li data-i18n="e1b1">Conception et développement d'Akademia (depuis 01/2026, en cours), plateforme multi-tenant avec assistance pédagogique RAG.</li>
+            <li data-i18n="e1b2">Intégrations IA côté serveur avec traçabilité et validation humaine, plus des outils internes pour les agents de code.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <p class="tl-when"><span data-i18n="e2When">01/2020 — aujourd'hui</span></p>
+        <div class="tl-body">
+          <h3 data-i18n="e2Role">Développeur back-end PHP / fullstack</h3>
+          <p class="tl-org">Fulldigits SARL</p>
+          <ul>
+            <li data-i18n="e2b1">Plus de 50 projets web, e-commerce et API livrés en PHP, Laravel, Symfony et WordPress.</li>
+            <li data-i18n="e2b2">Environnements Docker reproductibles et livraisons automatisées via Bitbucket Pipelines.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <p class="tl-when">10/2019 — 01/2020</p>
+        <div class="tl-body">
+          <h3 data-i18n="e3Role">Développeur back-end Node.js</h3>
+          <p class="tl-org">Sinopsis</p>
+          <ul>
+            <li data-i18n="e3b1">Modélisation de la base PostgreSQL et implémentation des règles métier.</li>
+            <li data-i18n="e3b2">Services REST en Node.js/Express et Java Spring Boot.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" aria-labelledby="edu-title">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow"><span>§05</span><span data-i18n="nEdu">Formation</span></p>
+      <h2 id="edu-title" data-i18n="eduTitle">Formation, certifications, langues.</h2>
+    </header>
+    <div class="edu">
+      <div class="edu-card reveal">
+        <h3 data-i18n="eduDeg">Diplôme</h3>
+        <p class="t" data-i18n="eduDegT">Licence en Développement Informatique</p>
+        <p class="s">IT University · 2015 — 2018</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3 data-i18n="eduCert">Certifications &amp; distinctions</h3>
+        <p class="t">DELF B2</p>
+        <p class="s">Alliance Française Antananarivo</p>
+                <p class="t" data-i18n="eduHack">1<sup>re</sup> place, Hackathon DevFest 2019</p>
+        <p class="s">GDG Antananarivo · Track « Alefa Dev »</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3 data-i18n="eduLang">Langues</h3>
+        <ul class="lang-list">
+          <li><span data-i18n="lgFr">Français</span><span class="mono">C1</span></li>
+          <li><span data-i18n="lgEn">Anglais</span><span class="mono">B1</span></li>
+          <li><span data-i18n="lgMg">Malagasy</span><span class="mono" data-i18n="lgNative">natif</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= CONTACT / FOOTER ================= -->
+<footer class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="eyebrow"><span>§06</span><span data-i18n="nContact">Contact</span></p>
+        <h2 id="contact-title" style="margin-top:var(--s-3)" data-i18n="contactTitle">Un produit à bâtir ou une base Laravel à fiabiliser&nbsp;?</h2>
+        <p class="how" data-i18n="how"><b>Ma façon de travailler&nbsp;:</b> des tests avant chaque mise en production, la sécurité pensée dès la conception, des déploiements reproductibles. Réponse sous 48&nbsp;h ouvrées.</p>
+      </div>
+      <ul class="channels reveal">
+        <li class="channel">
+          <div><span class="lbl">Email</span>
+            <a id="emailLink" href="https://www.linkedin.com/in/angelo-lock-to-hang" data-email><span data-i18n="emailFallback">Écrivez-moi via LinkedIn</span></a>
+          </div>
+          <button type="button" class="copy" id="copyEmail" hidden><span data-i18n="copy">Copier</span></button>
+        </li>
+        <li class="channel">
+          <div><span class="lbl">GitHub</span><a href="https://github.com/angelolockdev" rel="me">github.com/angelolockdev</a></div>
+        </li>
+        <li class="channel">
+          <div><span class="lbl">LinkedIn</span><a href="https://www.linkedin.com/in/angelo-lock-to-hang" rel="me">linkedin.com/in/angelo-lock-to-hang</a></div>
+        </li>
+      </ul>
+    </div>
+    <p class="vh" id="copyStatus" role="status" aria-live="polite"></p>
+    <div class="foot">
+      <span>© 2026 Angelo Lock To Hang · Antananarivo, Madagascar</span>
+      <span data-i18n="footMade">HTML et CSS écrits à la main · aucun framework</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  'use strict';
+  const root = document.documentElement;
+
+  /* ---------- Email: assembled client-side (light anti-scraping) ---------- */
+  const EMAIL_USER = 'locktohang';
+  const EMAIL_DOMAIN = 'gmail.com';
+  const hasEmail = Boolean(EMAIL_USER && EMAIL_DOMAIN);
+
+  /* ---------- EN dictionary (FR is read from the DOM at load) ---------- */
+  const EN = {
+    _title: 'Angelo Lock To Hang — Fullstack PHP/Laravel Developer & AI Engineer',
+    _desc: 'Fullstack PHP/Laravel/Symfony developer with 6+ years of experience and 50+ projects delivered. I build APIs, multi-tenant platforms and secure server-side RAG integrations. Based in Antananarivo, available remotely.',
+    skip: 'Skip to content',
+    brandAria: 'Angelo Lock To Hang — home', navAria: 'Main navigation', langAria: 'Language', themeAria: 'Light theme',
+    nAbout: 'About', nSkills: 'Skills', nProjects: 'Projects', nExp: 'Experience', nEdu: 'Education', nContact: 'Contact',
+    status: 'Available · freelance &amp; remote',
+    role: 'Fullstack PHP/Laravel Developer &amp; AI Engineer',
+    value: 'Solid Laravel applications, and AI built for production.',
+    lede: 'I design APIs, multi‑tenant platforms and server-side RAG integrations: tested, secured and shipped without nasty surprises.',
+    ctaProjects: 'View projects', ctaCv: 'Download CV', ctaContact: 'Get in touch',
+    tr1: 'user + tenant isolated', tr2: 'vector search', tr3: 'server-side LLM call',
+    tr4: 'sources and answer logged', tr5: 'human review when needed',
+    trCap: 'Illustrative diagram: the path of a question asked to the Akademia RAG tutor. No key and no model call ever goes through the client.',
+    statsTitle: 'At a glance',
+    st1: 'years of PHP, Laravel and Symfony', st2: 'projects delivered: web, e-commerce, APIs',
+    st3: 'multi-tenant RAG platform in the making since 01/2026', st4: 'working languages: French, English, Malagasy',
+    aboutTitle: 'Rigorous engineering, not a list of buzzwords.',
+    about1: 'I have been building with PHP for more than six years, mostly with <strong>Laravel and Symfony</strong>. At Fulldigits I shipped over 50 projects: websites, online stores, APIs and business services. The lesson I keep: code that lasts is code you can test, review and deploy without stress.',
+    about2: 'Since 2024 I have applied the same discipline to AI. On <strong>Akademia</strong>, which I have been building since January 2026, vector search and model calls stay on the server, every answer is traced, and a human approves what needs approving. I work from Antananarivo, in French or English, with on-site or remote teams.',
+    factsTitle: 'In short', fLoc: 'Based in', fLocV: 'Antananarivo, Madagascar', fMode: 'Engagement', fModeV: 'Freelance · remote · long-term missions',
+    fInt: 'Outside of code', i1: 'Generative AI watch', i2: 'Algorithmic trading', i3: 'Football', i4: 'Video games',
+    skillsTitle: 'What I use, and how often.',
+    skillsLede: 'An honest level instead of a percentage: what I use every week, what I master, and what I can pick up when the project calls for it.',
+    lv3: 'Daily driver', lv2: 'Proficient', lv1: 'Working knowledge',
+    cData: 'Data', cAi: 'Applied AI', cQuality: 'Quality &amp; architecture', cDevops: 'DevOps &amp; delivery', cExtra: 'Complementary',
+    kVector: 'Vector search', kAgents: 'AI agents', kLlm: 'LLM integration', kTests: 'Unit &amp; functional tests', kSec: 'Application security',
+    mLabel: 'Methods', mText: 'Agile/Scrum, code reviews, teamwork with product and design.',
+    projTitle: 'Projects that show the reasoning.',
+    projLede: 'For each one: the problem, my role, the stack, and what changed once it shipped.',
+    lProblem: 'Problem', lRole: 'My role', lResult: 'Result', lStatus: 'Status', lApproach: 'Approach',
+    pAkWhen: '01/2026 — in progress',
+    lCode: 'Source code', lDemo: 'Demo', lCase: 'Case study ↓', lSite: 'Live site', lRead: 'Read the article',
+    lPrivate: 'Code and demo on request', lSoon: 'Article in progress',
+    techAria: 'Technologies',
+    shotAk: 'Akademia preview (screenshot coming)', shotFum: 'University Fair website preview (screenshot coming)',
+    shotFd: 'Selected work (screenshots coming)', shotAi: 'Architecture diagram (coming)',
+    pAkTag: 'Product · AI &amp; education',
+    pAkProb: 'Schools and students preparing for the BEPC, the BACC or competitive exams juggle scattered materials, with no reliable personalised help.',
+    pAkRole: 'Architecture and development: API, authentication and RAG pipeline in Laravel, mobile client in Flutter.',
+    pAkRes: 'In active development since January 2026: one architecture for all three tracks, and a teaching assistant designed so every answer is traced and reviewed by a human.',
+    pFumTag: 'Freelance · Prime Vision',
+    pFumProb: 'Visitors had to find one institute among many exhibitors, while registrations and documents travelled through separate channels.',
+    pFumRole: 'Freelance developer: institute search, filterable gallery, exhibitor registration and document distribution.',
+    pFumRes: 'One centralised registration flow, and documents distributed from the site instead of by hand.',
+    pFdWhen: '2020 — present', pFdTag: 'Selected work · Fulldigits SARL', pFdTitle: 'Web, e-commerce &amp; APIs',
+    pFdProb: 'Clients with very different needs, tight deadlines, and environments that drifted between dev machines, staging and production.',
+    pFdRole: 'Back-end PHP / fullstack developer across the whole cycle: design, development, testing, release.',
+    pFdRes: 'More than 50 projects delivered, with reproducible Docker environments and automated releases through Bitbucket Pipelines.',
+    pFdNda: 'Client projects under confidentiality · details on request',
+    pAiTag: 'Case study · AI engineering', pAiTitle: 'Integrating an LLM on the server without losing control',
+    pAiProb: 'Wiring a model straight into an app leaks keys, makes answers unverifiable and lets mistakes reach users.',
+    pAiAppr: 'Model calls on the server only, per-tenant isolation, logging of sources and answers, and a human review queue for sensitive cases.',
+    expTitle: 'A back-end foundation, extended toward product and AI.',
+    e1When: '2024 — present', e1Where: 'Antananarivo / Remote', e1Role: 'AI Engineer &amp; Product Developer', e1Org: 'Independent projects',
+    e1b1: 'Designing and building Akademia (since 01/2026, in progress), a multi-tenant platform with RAG-based teaching assistance.',
+    e1b2: 'Server-side AI integrations with traceability and human review, plus internal tooling for coding agents.',
+    e2When: '01/2020 — present', e2Role: 'Back-end PHP / Fullstack Developer',
+    e2b1: 'More than 50 web, e-commerce and API projects delivered in PHP, Laravel, Symfony and WordPress.',
+    e2b2: 'Reproducible Docker environments and automated releases through Bitbucket Pipelines.',
+    e3Role: 'Node.js Back-end Developer',
+    e3b1: 'Designed the PostgreSQL data model and implemented the business rules.',
+    e3b2: 'REST services in Node.js/Express and Java Spring Boot.',
+    eduTitle: 'Education, certifications, languages.',
+    eduDeg: 'Degree', eduDegT: 'Bachelor’s degree in Software Development',
+    eduCert: 'Certifications &amp; awards', eduHack: '1st place, DevFest 2019 Hackathon',
+    eduLang: 'Languages', lgFr: 'French', lgEn: 'English', lgMg: 'Malagasy', lgNative: 'native',
+    contactTitle: 'A product to build, or a Laravel codebase to make reliable?',
+    how: '<b>How I work:</b> tests before every release, security designed in from the start, reproducible deployments. Reply within 2 business days.',
+    emailFallback: 'Message me on LinkedIn', copy: 'Copy', copied: 'Copied', copiedMsg: 'Email address copied to clipboard', copyFail: 'Copy failed — select the address manually',
+    footMade: 'Hand-written HTML and CSS · no framework'
+  };
+  const FR_EXTRA = { copied: 'Copié', copiedMsg: 'Adresse email copiée dans le presse-papiers', copyFail: 'Copie impossible — sélectionnez l’adresse manuellement' };
+
+  const textEls = [...document.querySelectorAll('[data-i18n]')];
+  const ariaEls = [...document.querySelectorAll('[data-i18n-aria]')];
+  const FR = { _title: document.title, _desc: document.getElementById('metaDesc').content, ...FR_EXTRA };
+  textEls.forEach(el => { const k = el.dataset.i18n; if (!(k in FR)) FR[k] = el.innerHTML; });
+  ariaEls.forEach(el => { const k = el.dataset.i18nAria; if (!(k in FR)) FR[k] = el.getAttribute('aria-label'); });
+
+  let lang = 'fr';
+  const t = k => (lang === 'en' ? EN : FR)[k];
+
+  function setLang(next, persist) {
+    lang = next === 'en' ? 'en' : 'fr';
+    const dict = lang === 'en' ? EN : FR;
+    textEls.forEach(el => { const v = dict[el.dataset.i18n]; if (v != null) el.innerHTML = v; });
+    ariaEls.forEach(el => { const v = dict[el.dataset.i18nAria]; if (v != null) el.setAttribute('aria-label', v); });
+    root.lang = lang; root.dataset.lang = lang;
+    document.title = dict._title;
+    document.getElementById('metaDesc').content = dict._desc;
+    document.getElementById('ogLocale').content = lang === 'en' ? 'en_US' : 'fr_FR';
+    document.querySelectorAll('[data-set-lang]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)));
+    const cv = document.getElementById('cvLink'); cv.href = cv.dataset['cv' + (lang === 'en' ? 'En' : 'Fr')];
+    if (hasEmail) renderEmail();
+    if (persist) { try { localStorage.setItem('lang', lang); } catch (e) {} }
+  }
+  document.querySelectorAll('[data-set-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setLang, true)));
+
+  /* ---------- Theme ---------- */
+  const themeBtn = document.getElementById('themeToggle');
+  const mql = matchMedia('(prefers-color-scheme: light)');
+  const effective = () => root.dataset.theme || (mql.matches ? 'light' : 'dark');
+  function syncTheme() {
+    const th = effective();
+    root.dataset.uiTheme = th;
+    themeBtn.setAttribute('aria-pressed', String(th === 'light'));
+    document.querySelector('meta[name="theme-color"]').content = th === 'light' ? '#F5F7F9' : '#0B1620';
+  }
+  themeBtn.addEventListener('click', () => {
+    const next = effective() === 'light' ? 'dark' : 'light';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    syncTheme();
+  });
+  mql.addEventListener ? mql.addEventListener('change', syncTheme) : mql.addListener(syncTheme);
+  syncTheme();
+
+  /* ---------- Email + copy ---------- */
+  const emailLink = document.getElementById('emailLink');
+  const copyBtn = document.getElementById('copyEmail');
+  const status = document.getElementById('copyStatus');
+  function renderEmail() {
+    const addr = EMAIL_USER + '@' + EMAIL_DOMAIN;
+    emailLink.href = 'mailto:' + addr;
+    emailLink.textContent = addr;
+  }
+  if (hasEmail) {
+    renderEmail();
+    copyBtn.hidden = false;
+    copyBtn.addEventListener('click', async () => {
+      const addr = EMAIL_USER + '@' + EMAIL_DOMAIN;
+      let ok = false;
+      try { await navigator.clipboard.writeText(addr); ok = true; }
+      catch (e) {
+        const ta = Object.assign(document.createElement('textarea'), { value: addr });
+        ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        try { ok = document.execCommand('copy'); } catch (_) {}
+        ta.remove();
+      }
+      const label = copyBtn.querySelector('span');
+      status.textContent = ok ? t('copiedMsg') : t('copyFail');
+      if (ok) {
+        copyBtn.dataset.state = 'done'; label.textContent = t('copied');
+        setTimeout(() => { delete copyBtn.dataset.state; label.innerHTML = t('copy'); }, 2000);
+      }
+    });
+  }
+
+  /* ---------- Active section highlight ---------- */
+  const links = [...document.querySelectorAll('.nav a[href^="#"]')];
+  const byId = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const setActive = id => links.forEach(a => a === byId.get(id) ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const a = byId.get(e.target.id);
+        setActive(e.target.id);
+        if (a && matchMedia('(max-width: 59.99rem)').matches) a.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    byId.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) setActive(null); }, { rootMargin: '-40% 0px -55% 0px' })
+      .observe(document.getElementById('top'));
+  }
+
+  /* ---------- Initial language: ?lang= > saved > FR ---------- */
+  let initial = new URLSearchParams(location.search).get('lang');
+  if (!initial) { try { initial = localStorage.getItem('lang'); } catch (e) {} }
+  if (initial === 'en') setLang('en', false);
+})();
+</script>
+</body>
 </html>
