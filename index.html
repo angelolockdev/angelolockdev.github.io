@@ -52,14 +52,14 @@
 <script>
 try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}
 /* hold the hero (max 1.2s) until webfonts land: no reflow, choreography starts on final metrics */
-(function(d){if(!d.fonts||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var r=d.documentElement,done=function(){r.classList.remove('fp')};r.classList.add('fp');d.fonts.ready.then(done);setTimeout(done,1200)})(document);
+(function(d){if(!d.fonts||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var r=d.documentElement,done=function(){r.classList.remove('fp')};r.classList.add('fp');d.fonts.ready.then(done);setTimeout(done,3000)})(document);
 </script>
 
 <style>
 /* ============ FONT FALLBACKS (metric-matched → no reflow when webfonts land) ============ */
-@font-face{font-family:"Newsreader Fallback";src:local("Georgia");size-adjust:103%}
-@font-face{font-family:"Newsreader Fallback";font-style:italic;src:local("Georgia Italic");size-adjust:95.6%}
-@font-face{font-family:"Plex Sans Fallback";src:local("Arial");size-adjust:101%}
+@font-face{font-family:"Newsreader Fallback";font-weight:100 900;src:local("Georgia");size-adjust:93.7%}
+@font-face{font-family:"Newsreader Fallback";font-style:italic;font-weight:100 900;src:local("Georgia Italic"),local("Georgia");size-adjust:87.4%}
+@font-face{font-family:"Plex Sans Fallback";font-weight:100 900;src:local("Arial");size-adjust:101%}
 /* ============ TOKENS ============ */
 :root{
   --ff-display:"Newsreader","Newsreader Fallback",Georgia,"Times New Roman",serif;
@@ -197,8 +197,7 @@ section{padding-block:var(--s-8)}
 @media (min-width:60rem){.hero{padding-block:var(--s-9) var(--s-8)}.hero-grid{grid-template-columns:1.15fr .85fr}}
 .chip{display:inline-flex;align-items:center;gap:.55rem;padding:.4rem .8rem;border:1px solid var(--line-strong);border-radius:var(--r-pill);
   font:500 var(--fs-xs)/1.2 var(--ff-mono);color:var(--text-2);background:var(--bg-elev)}
-.dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 color-mix(in srgb,var(--ok) 60%,transparent);animation:pulse 2.4s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px color-mix(in srgb,var(--ok) 22%,transparent)}
 .hero h1{font-size:var(--fs-2xl);margin-top:var(--s-5);letter-spacing:-.025em}
 .role{font:500 var(--fs-sm)/1.4 var(--ff-mono);color:var(--accent);margin:var(--s-4) 0 0}
 .value{font:500 var(--fs-lg)/1.3 var(--ff-display);color:var(--text);margin:var(--s-5) 0 var(--s-4);max-width:32ch}
@@ -440,7 +439,7 @@ section{padding-block:var(--s-8)}
 .hero::after{content:"";position:absolute;z-index:-1;top:-14rem;right:-15%;width:min(900px,90vw);aspect-ratio:1;pointer-events:none;
   background:radial-gradient(closest-side,color-mix(in srgb,var(--accent) 16%,transparent),transparent 72%);
   animation:drift 22s ease-in-out infinite alternate}
-.hero.is-idle::after,.hero.is-idle .dot,.hero.is-idle .st.wait,.hero.is-idle li[data-s] .st{animation-play-state:paused}
+.hero.is-idle::after,.hero.is-idle .st.wait,.hero.is-idle li[data-s] .st{animation-play-state:paused}
 
 @supports (animation-timeline:view()){
   .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}

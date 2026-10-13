@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-13T13:23:48.569Z",
+        "reason": "False positive: reads clamp()/var() defaults, not computed sizes. Rendered h1 84px / h2 48px / body 17px = 2.8x."
+      }
+    ]
+  }
+}
